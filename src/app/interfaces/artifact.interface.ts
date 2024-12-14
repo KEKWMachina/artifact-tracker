@@ -1,0 +1,1 @@
+export interface Artifact { name: string, source: string, found?: boolean }
