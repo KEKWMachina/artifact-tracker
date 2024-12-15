@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Stalker Font';
+    src: url('./../assets/fonts/Stalker.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stalker OG';
+    src: url('./../assets/fonts/StalkerOGFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$light-grey-color: #EEEEEE;
+$grey-color: #686D76;
+$dark-grey-color: #373A40;
+$orange-color: #DC5F00;
+$highlight-color: #A8B3BC;
+
+$app-font: 'Stalker Font';
+$header-font: 'Stalker OG';

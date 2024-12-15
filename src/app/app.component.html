@@ -1,4 +1,7 @@
 <div class="artifact-checklist">
+  <div class="artifact-checklist__app-header">
+    <div class="artifact-checklist__app-title">S.T.A.L.K.E.R.2 HoC Artifact Checklist</div>
+  </div>
   <button (click)="handleReset()" class="artifact-checklist__reset-button">Reset</button>
   <div class="artifact-checklist__control-panel">
     <input #searchField (input)="onSearchInput($event)" class="artifact-checklist__search" type="text">
@@ -7,7 +10,9 @@
     @for (artifact of artifactListService.artifactList.value; track artifact.name) {
     <div (click)="onCardClick(artifact.name)" [ngClass]="{ 'artifact-checklist__artifact-card--found': artifact.found }"
       class="artifact-checklist__artifact-card">
-      <div *ngIf="artifact.found" class="artifact-checklist__checkmark">&#x2705;</div>
+      <div *ngIf="artifact.found" class="artifact-checklist__checkmark-wrapper">
+        <div class="artifact-checklist__checkmark">&#x2713;</div>
+      </div>
       <img class="artifact-checklist__image" [src]="artifact.source" />
       <div class="artifact-checklist__name">{{ artifact.name }} </div>
     </div>
